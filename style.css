@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+header {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 3px solid #e1a818;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Styling for LinkedIn link */
+header a,
+footer a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #e1a818;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #e1a818;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-block; /* Ensure the link behaves like a block-level element */
+  margin-top: 10px; /* Add margin to separate the link from other content */
+}
+
+header a:hover,
+footer a:hover {
+  background-color: #e1a818;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+section {
+  margin: 40px 0;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  color: #1c1c1c;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+ul li {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.aboutme img {
+  border-radius: 50%;
+  max-width: 180px;
+  margin-bottom: 15px;
+}
+
+.aboutme h2 {
+  font-size: 22px;
+  color: #e1a818;
+}
+
+.aboutwrite h3 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #333;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #e1a818;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 768px) {
+  header {
+    padding: 30px 10px;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  section {
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .knowme {
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+
+  .aboutme {
+    text-align: center;
+  }
+
+  .aboutme img {
+    max-width: 120px;
+    margin-top: 10px;
+  }
+
+  .aboutwrite {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .aboutwrite h2 {
+    font-size: 18px;
+  }
+
+  footer {
+    padding: 15px 10px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  header a {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  header a:hover {
+    background-color: #333;
+    color: #e1a818;
+  }
+}
+
+/* Section layout for About Me */
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 40px; /* Space between columns */
+  align-items: start; /* Align to top */
+}
+
+.me, .writer {
+  padding: 20px;
+}
+
+.me img {
+  border-radius: 50%;
+  max-width: 180px;
+  margin-bottom: 15px;
+}
+
+.writer p {
+  font-size: 16px;
+  color: #555;
+}
+
+.writer h2 {
+  color: #e1a818;
+  margin-bottom: 15px;
+}
+
+/* Mobile layout adjustments */
+@media (max-width: 768px) {
+  .section {
+    grid-template-columns: 1fr; /* Stack the columns */
+  }
+
+  .me, .writer {
+    text-align: center;
+  }
+
+  .me img {
+    max-width: 120px; /* Adjust image size on smaller screens */
+    margin-bottom: 15px;
+  }
+
+  .writer p {
+    font-size: 14px;
+  }
+}
