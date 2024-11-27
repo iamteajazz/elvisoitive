@@ -115,6 +115,11 @@ img {
   font-weight: normal;
   color: #333;
 }
+.aboutme .writer p, #case-studies h2, #case-studies p, #case-studies li {
+  font-size: 22px;
+  color: #001f3f;
+  
+}
 
 footer {
   background-color: #333;
@@ -128,6 +133,15 @@ footer {
 footer a {
   color: #e1a818;
   text-decoration: none;
+}
+footer .elvis {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 0px;
+  margin-top: 0px;
+  font-size: 14px;
+  border: 0px solid #e1a818;
 }
 
 footer a:hover {
