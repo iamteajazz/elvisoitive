@@ -219,37 +219,27 @@
         <p>Designed and developed a responsive website for a local business, boosting their online engagement by 50%.</p>
       </div>
     </section>
-
    <!-- white bg -->
 	<section id="contact">
+    <h2 class="contactheading">Get in touch</h2>
+
 		<div class="container">
 			
 			<div class="row reveal">
 				<!-- contact form -->
-				<form class="tm-contact-form" action="formspree.io/f/xwppzglk"
-				method="POST">
-					<div class="col-lg-6 col-md-6">
-						<div id="google-map"></div>
-                    </div>
-
-					<div class="col-lg-6 col-md-6 tm-contact-form-input">
-						<h2 class="contactheading">Get in touch</h2>
-						<div class="form-group">
-							<input type="text" id="contact_name" class="form-control" name="name" placeholder="Full name" />
-						</div>
-						<div class="form-group">
-							<input type="email" id="contact_email" class="form-control" name="email" placeholder="Email" />
-						</div>
-						<div class="form-group">
-							<textarea id="contact_message" class="form-control" rows="6"
-								name="message" placeholder="Drop your querry or message here."></textarea>
-						</div>
-						<div class="form-group">
-							<button class="tm-submit-btn" type="submit" name="email-button" 
-								id="email-btn">SUBMIT NOW</button>
-						</div>
-					</div>
-				</form>
+				<form action="https://formspree.io/f/xwppzglk" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          
+          <button type="submit">Send</button>
+        </form>
+        
 			</div>
 		</div>
 	</section>
