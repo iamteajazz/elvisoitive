@@ -3,110 +3,255 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of a Digital Marketing Specialist with expertise in SEO, Google Ads, and Frontend Development. Driving data-driven strategies and exceptional user engagement.">
+  <meta name="keywords" content="Digital Marketing, SEO, Google Ads, Frontend Development, Web Analytics, Content Marketing, Remote Work Skills">
+  <meta name="author" content="Elvis Ovie Itive">
   <title>Portfolio - Digital Marketing Specialist</title>
   <link rel="stylesheet" href="./style.css">
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "[Elvis Ovie Itive]",
+    "jobTitle": "Digital Marketing Specialist",
+    "url": "https://iamteajazz.github.io/elvisoitive/",
+    "sameAs": [
+      "https://www.linkedin.com/in/iamteajazz/",
+      "https://x.com/iamteajazz",
+      "https://github.com/iamteajazz"
+    ],
+    "description": "Experienced digital marketer with expertise in SEO, Google Ads, and Frontend Development. Proven success in driving data-driven strategies to increase user engagement and business growth."
+  }
+  </script>
+  <style>
+       /* Add hover effects for interactivity */
+       a:hover {
+      color: #ff9800;
+      text-decoration: underline;
+    }
+
+    .case-study img:hover, #recognition img:hover, .portfolio-item img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    button {
+      background-color: #1c1c1c;
+      color: rgb(143, 123, 123);
+      border: 2px solid #e1a818;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e1a818;
+      color: #1c1c1c;
+    }
+    /* Sticky Navigation Bar Styling */
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #1c1c1c;
+      color: goldenrod;
+      padding: 10px 0;
+      z-index: 1000;
+      border-bottom: 2px solid #e1a818;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: goldenrod;
+      text-decoration: none;
+      padding: 8px 15px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #e1a818;
+      color: #1c1c1c;
+      border-radius: 5px;
+    }
+
+    .active {
+      background-color: #e1a818;
+      color: #1c1c1c;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
+
+  <nav id="navbar">
+    <a href="#about-me">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#recognition">Recognition</a>
+    <a href="#case-studies">Case Studies</a>
+  </nav>
 
   <header>
     <h1>Digital Marketing Specialist</h1>
     <p class="message">Driving Data-Driven Strategies and Exceptional User Engagement</p>
-    <p><a href="https://www.linkedin.com/in/iamteajazz/" target="_blank">CONNECT ON LINKEDIN</a></p>
-    <a href="#case-studies">Case Studies</a>
+    <p><a href="https://www.linkedin.com/in/iamteajazz/" target="_blank" rel="noopener noreferrer">CONNECT ON LINKEDIN</a></p>
   </header>
 
-  <div class="portfoliopage">
-    <section class="pages">
-      <div class="page">
-        <img src="./page1.png" alt="digital marketing portfolio">
-      </div>
+  <main>
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p>I am a results-oriented Digital Marketing Specialist with proven expertise in PPC, SEO, content creation/writing and web analytics. My passion lies in crafting data-driven marketing strategies that not only optimize websites but also deliver measurable ROI for businesses.</p>
+      <p>As a certified Google Ads professional and a Chartered Institute of Marketing (CIM) Level 6 Digital Marketing candidate, I bring a deep understanding of the digital landscape. I specialize in creating user-focused digital experiences that enhance engagement, drive growth, and achieve business objectives.</p>
     </section>
-    
-    <div class="container">
-      <!-- About Me Section -->
-      <section class="aboutme">
-        <div class="section">
-          <div class="me">
-            <h1>ABOUT ME</h1>
-            <img class="about" src="./elvis.PNG" alt="Elvis Ovie Itive">
-            <h2>ELVIS OVIE ITIVE</h2>
-            <h3>Digital Marketing Expert</h3>  
-          </div>
-          <div class="writer">
-            <p>I'm a results-driven Digital Marketing Specialist with expertise in PPC, SEO, and web analytics. I specialize in data-driven marketing strategies that optimize websites and increase ROI for businesses.</p>
-            <p>With certifications in Google Ads and as a Chartered Institute of Marketing (CIM Level 6 Digital Marketing Candidate), I am passionate about delivering user-focused digital experiences that drive ROI and engagement.</p>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="page">
-          <img src="./page4.jpg" alt="vision">
-        </div>
-      </section>
-      <section>
-        <div class="page">
-          <img src="./page5.jpg" alt="personal skills">
-        </div>
-      </section>
 
-      <!-- Case Studies Section -->
-      <section id="case-studies">
-        <h1>CASE STUDIES</h1>
+    <section id="skills">
+      <h2>Key Skills</h2>
+      <ul>
+        <li>Search Engine Optimization (SEO)</li>
+        <li>Google Ads Campaign Management</li>
+        <li>Web Analytics (Google Analytics, GA4)</li>
+        <li>Content Marketing Strategy</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Responsive Web Design</li>
+        <li>Social Media Advertising (Facebook, Instagram, LinkedIn, Tiktok etc)</li>
+        <li>Remote Collaboration Tools (Slack, Figma, Zoom, Trello)</li>
+      </ul>
+    </section>
 
-        <div class="case-study">
-          <h2>PPC Campaign Optimization for E-Commerce Brand</h2>
-          <p><strong>Client:</strong> Mid-sized online retailer specializing in sustainable fashion.</p>
-          <p><strong>Objective:</strong> Increase online sales while reducing cost-per-click (CPC) and cost-per-acquisition (CPA).</p>
-          <p><strong>Results:</strong></p>
-          <ul>
-            <li>25% increase in conversions within three months.</li>
-            <li>Reduced CPC by 18% through targeted bidding strategies.</li>
-            <li>Improved ROI by 20% by focusing on high-performing ad groups.</li>
-          </ul>
-          <img src="./Graph_ Conversion Growth Over Time.png" alt="Conversion Growth Over Time">
+    <section id="recognition">
+      <h2>Recognition</h2>
+      <img src="./Recognition.png" alt="Recognition">
+    </section>
+
+    <section id="case-studies">
+      <h2>Case Studies</h2>
+      <div class="case-study">
+        <h3>SEO Performance Improvement for Trustenable Technologies</h3>
+        <p><strong>Before:</strong> Struggled with low engagement and high bounce rates. Limited organic traffic and visibility.</p>
+        <p><strong>After:</strong> Achieved a dramatic increase in user engagement and organic traffic through targeted SEO strategies.</p>
+
+        <div class="case-study-images">
+          <img src="./before_google_analytics.png" alt="Before SEO - Google Analytics Data">
+          <img src="./after_google_analytics.png" alt="After SEO - Google Analytics Data">
         </div>
+        <ul>
+          <li>484 active users compared to 24 before implementation.</li>
+          <li>Average engagement time increased to 10 minutes 24 seconds.</li>
+          <li>Organic search sessions improved significantly from 8 to 440.</li>
+        </ul>
+      </div>
 
-        <div class="case-study">
-          <h2>SEO Strategy for Local Service Provider</h2>
+      <div class="case-study">
+        <h3>Performance Boost for Handopex Website</h3>
+        <p>Optimized Handopex website with targeted strategies to enhance visitor engagement and session counts.</p>
+        <img src="./handopex_analysis.png" alt="Handopex Website Performance Overview">
+        <ul>
+          <li>Visitors increased by 803% week-on-week.</li>
+          <li>Sessions grew by 794%, reaching 322 total.</li>
+          <li>Page views improved by 722%, achieving 444 views in total.</li>
+        </ul>
+        <p><a href="https://www.handopex.com" target="_blank" rel="noopener noreferrer">Handopex</a></p>
+
+      </div>
+
+      <div class="case-study">
+        <h3>SEO Campaign for E-commerce Website</h3>
+        <p>Implemented a comprehensive SEO strategy for a leading e-commerce platform, achieving a 50% increase in organic traffic and a 20% boost in conversion rates within 6 months.</p>
+        <img src="./Graph_ Conversion Growth Over Time.png" alt="Conversion Growth Over Time">
+      </div>
+
+      <div class="case-study">
+        <h2>SEO Strategy for Local Service Provider</h2>
           <p><strong>Client:</strong> Local cleaning services business aiming to increase organic traffic and lead generation.</p>
           <p><strong>Results:</strong></p>
-          <ul>
-            <li>Increased organic traffic by 40% in six months.</li>
-            <li>Improved local keyword rankings from position 15 to position 3.</li>
-            <li>Generated 50% more inquiries through the website’s contact form.</li>
-          </ul>
-          <img src="./Pie Chart_ Traffic Sources Breakdown.png" alt="Traffic Sources Breakdown">
-        </div>
+        <img src="./Pie Chart_ Traffic Sources Breakdown.png" alt="Traffic Sources Breakdown">     
+        <ul>
+          <li>Increased organic traffic by 40% in six months.</li>
+          <li>Improved local keyword rankings from position 15 to position 3.</li>
+          <li>Generated 50% more inquiries through the website’s contact form.</li>
+        </ul> 
+      </div>
+      <div class="case-study">
+        <h3>Website Redesign for Local Business</h3>
+        <p>Redesigned and optimized a local business website, leading to a 40% increase in user engagement and a significant improvement in mobile responsiveness.</p>
+        <img src="./Bar Chart_ Bounce Rate Reduction.png" alt="Bounce Rate Reduction">
+        <ul>
+          <li>Reduced bounce rate by 20% within the first month post-launch.</li>
+          <li>Increased session duration by 30%.</li>
+          <li>Boosted form submissions by 25% with improved CTAs and navigation.</li>
+        </ul>
+      </div>
 
-        <div class="case-study">
-          <h2>Website Redesign for Improved Usability</h2>
-          <p><strong>Client:</strong> Growing SaaS company struggling with high bounce rates.</p>
-          <p><strong>Results:</strong></p>
-          <ul>
-            <li>Reduced bounce rate by 20% within the first month post-launch.</li>
-            <li>Increased session duration by 30%.</li>
-            <li>Boosted form submissions by 25% with improved CTAs and navigation.</li>
-          </ul>
-          <img src="./Bar Chart_ Bounce Rate Reduction.png" alt="Bounce Rate Reduction">
-        </div>
-      </section>
-    </div>
+      <div class="case-study">
+        <h3>Content Marketing for Startup Company</h3>
+        <p>Created a comprehensive content marketing strategy for a tech startup to build brand awareness and drive engagement.</p>
+        <ul>
+          <li>Developed engaging blog posts tailored to the target audience.</li>
+          <li>Designed visually appealing infographics to simplify complex data.</li>
+          <li>Produced high-quality promotional videos to showcase products and services.</li>
+        </ul>
+        <p><strong>Results:</strong> Increased social media reach by 120%, enhanced website traffic by 85%, and improved lead generation by 40% within six months.</p>
+        <p><a href="https://letustalkit.com/" target="_blank" rel="noopener noreferrer">TalkTalk</a></p>
+        <p><a href="https://cogentibs.com/" target="_blank" rel="noopener noreferrer">CogentIBS</a></p>
 
-    <!-- Thank You Section -->
-    <div class="thanks">
-      <section class="thanks">
-        <div class="page">
-          <img src="./page12.jpg" alt="contact for seo or digital services">
-        </div>
-      </section>
-    </div>
-  </footer>
+      </div>
+
+      <div class="case-study">
+        <h3>Content Marketing for Non-Profit Organization</h3>
+        <p>Developed and executed a content marketing strategy that resulted in a 30% increase in donor engagement and a 25% growth in social media followers.</p>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio Highlights</h2>
+      <div class="portfolio-item">
+        <p>Managed an SEO campaign resulting in a 40% increase in organic traffic within 6 months.</p>
+      </div>
+      <div class="portfolio-item">
+        <p>Optimized Google Ads campaigns to achieve a 30% lower CPA and increased ROI.</p>
+      </div>
+      <div class="portfolio-item">
+        <p>Designed and developed a responsive website for a local business, boosting their online engagement by 50%.</p>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2024 Digital Marketing Portfolio Dev by <a class="elvis" href="https://www.linkedin.com/in/iamteajazz/">Elvis Ovie Itive</a>  | All Rights Reserved</p>
-    <p><a href="https://www.linkedin.com/in/iamteajazz/" target="_blank">Connect on LinkedIn</a></p>
+    <p>&copy; <span id="current-year"></span> Elvis Ovie Itive. All rights reserved.</p>
   </footer>
 
-  <script src="./script.js"></script>
+  <script>
+    // Dynamically set the current year in the footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Highlight active section in navigation
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('nav a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 70; // Adjust the offset to account for the sticky navbar height
+    const sectionHeight = section.offsetHeight;
+    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === `#${current}`) {
+      link.classList.add('active');
+    }
+  });
+});
+
+  </script>
+
 </body>
 </html>
