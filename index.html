@@ -91,8 +91,9 @@
   <nav id="navbar">
     <a href="#about-me">About Me</a>
     <a href="#skills">Skills</a>
-    <a href="#recognition">Recognition</a>
+    <!-- <a href="#recognition">Recognition</a> -->
     <a href="#case-studies">Case Studies</a>
+    <a href="#contact">contact Me</a>
   </nav>
 
   <header>
@@ -218,6 +219,32 @@
         <p>Designed and developed a responsive website for a local business, boosting their online engagement by 50%.</p>
       </div>
     </section>
+
+    <section id="contact" data-aos="fade-up">
+      <div class="container-2">
+          <h2>Get in Touch</h2>
+         <br>
+         <form id="contact-form" method="post" action="./contact.php">
+          <input type="text" name="ajax_firstname" placeholder="First Name" required />
+          <input type="text" name="ajax_lastname" placeholder="Last Name" required />
+          <input type="email" name="ajax_email" placeholder="Your Email" required />
+          <textarea name="ajax_message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+      </form>
+      
+      <script>
+      
+          // Populate select element with country codes
+          for (const country in countryCodes) {
+              const option = document.createElement("option");
+              option.value = countryCodes[country];
+              option.textContent = `${country} (${countryCodes[country]})`;
+              countryCodeSelect.appendChild(option);
+          }
+      </script>
+            
+      </div>
+  </section>
   </main>
 
   <footer>
